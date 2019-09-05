@@ -1,0 +1,24 @@
+﻿@{ 
+    Layout = null;
+}
+
+@Html.Label("Email", "e-Posta", new { @class = "classname"})
+
+<hr/>
+
+@Html.TextArea("Id", "value", 5,10, null)
+
+<hr/>
+
+@{ 
+    string x = "zeynep";
+}
+
+@Html.TextAreaFor(model => x)
+
+<hr/>
+
+@Html.TextBoxFor(model => DateTime.Now, "{0:MM-dd-yyyy}", new { maxLength = 10, style = "min-height: 30px; border-color: red;"})
+
+<hr/>
+@Html.CheckBox("id", true)
